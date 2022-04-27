@@ -32,6 +32,7 @@
 			}
 			let game_container = document.getElementById('game-container');
 			game_container.style.transform = `scale(${scale})`;
+			console.log('scale', scale, 'window width', window_width);
 		}
 		window.onresize = resize;
 		resize();
