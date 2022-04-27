@@ -28,7 +28,7 @@
 				scale -= 1;
 			}
 			else {
-				scale = Math.min(window_width/game_width,window_height/gh);
+				scale = Math.min(window_width/game_width,window_height/game_height);
 			}
 			let game_container = document.getElementById('game-container');
 			game_container.style.transform = `scale(${scale})`;
