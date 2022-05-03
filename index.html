@@ -9,7 +9,7 @@
 			width: 144px;
 			height: 256px;
 			position: absolute;
-			top: calc(50vh - 128px);
+			/*top: calc(50vh - 128px);*/
 			left: calc(50vw - 72px);
 		}
 	</style>
@@ -32,7 +32,7 @@
 			}
 			let game_container = document.getElementById('game-container');
 			game_container.style.transform = `scale(${scale})`;
-			console.log('scale', scale, 'window width', window_width);
+			game_container.style.top = `${window_height/2 - 128}px`;
 		}
 		window.onresize = resize;
 		resize();
